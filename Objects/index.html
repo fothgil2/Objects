@@ -6,11 +6,13 @@
     <link href="Content/font-awesome.css" rel="stylesheet" />
 </head>
 <body>
-    <div><table style="visibility: hidden;" id="allCars" class="table table-striped" ></table></div>
+    <!--<img src="http://www.devdevils.com/wp-content/uploads/2014/03/cars.jpg">-->
+    <button id="createCar" class="btn btn-danger fa fa-cloud-upload" onclick="myApp.createCar();">Make Car</button>
+    
     <input id="carMake" type="text" placeholder="Make" />
     <input id="carModel" type="text" placeholder="Model" />
     <input id="carColor" type="text" placeholder="Color" />
-    <button id="createCar"class="btn btn-danger fa fa-cloud-upload" onclick="myApp.createCar();">Make Car</button>
+    <div><table style="visibility: hidden;" id="allCars" class="table table-striped"></table></div>
     <button id="updateCar" class="btn btn-warning" onclick="myApp.saveEditCar()" style="visibility: hidden">Update Car</button>
     <button id="cancelEdit" class="btn btn-danger" onclick="myApp.cancelEditCar()" style="visibility: hidden">Cancel</button>
     <script src="Scripts/jquery-1.9.1.js"></script>
